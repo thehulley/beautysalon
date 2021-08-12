@@ -143,6 +143,10 @@ main{
     color: var(--base-color);
 }
 
+.logo-alt span{
+    color: var(--body-color);
+}
+
 /*    =====    Nav    =====    */
 
 nav{
@@ -181,13 +185,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-nav .menu ul{
-    display: none;
-}
-
 nav .menu{
     opacity: 0;
     visibility: hidden;
+    display: none;
     top: -20rem;
     transition: display 0.2s;
 }
@@ -441,3 +442,82 @@ nav.show div.icon-close{
     color: var(--base-color);
 }
 
+/*    =====    Footer    =====    */
+
+footer{
+    background: var(--base-color);
+}
+
+footer .logo{
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p{
+    color: var(--text-color-light);
+    margin-bottom: 0.75rem;
+}
+
+footer i{
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+footer .social a{
+    margin-right: 2rem;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+footer .social a:hover{
+    transform: translateY(-5px);
+}
+
+/*    =====    Back to top    =====    */
+
+.back-to-top{
+    background: var(--base-color);
+    color: var(--text-color-light);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    clip-path: circle();
+    font-size: 1.5rem;
+    line-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity, transform 0.3s;
+    transform: translateY(100%);
+}
+
+.back-to-top.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+/*    =====    Responsive    =====    */
+
+/*
+    Extra large devices: 1200 >
+    Large devices: 1023 >
+    Large devices: 992 >
+    Medium devices:  >
+*/
+
+@media (min-width: 767px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1023px){
+    
+}
+
+@media (min-width: 1200px){
+
+}
